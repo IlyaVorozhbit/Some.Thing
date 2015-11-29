@@ -1,0 +1,21 @@
+body {
+    background-color: #f2f2f2;
+    margin: 10px;
+}
+
+.content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #969696;
+    padding: 10px;
+}
+
+.footer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #969696;
+    padding: 3px;
+    margin-top: 10px;
+}
