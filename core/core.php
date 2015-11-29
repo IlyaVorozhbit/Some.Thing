@@ -4,7 +4,7 @@
 
         private $module;
         private $mode;
-        private $db;
+        private static $db;
 
         public function __construct(){
 
@@ -18,8 +18,8 @@
         }
 
         public function connect_to_db(){
-            $this->db = new \phpsql\connectors\mysql();
-            $this->db->OpenConnection('root', '', '127.0.0.1', '3306', 'testing', []);
+            self::$db = new \phpsql\connectors\mysql();
+            self::$db->OpenConnection('root', '', '127.0.0.1', '3306', 'testing', []);
         }
 
         public function defineModule(){
@@ -37,6 +37,10 @@
 
         public function mode(){
             return $this->mode;
+        }
+
+        public static function db(){
+            return self::$db;
         }
 
     }
