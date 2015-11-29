@@ -7,6 +7,11 @@
     <body>
 
         <div class="navbar">
+
+            <div class="logo">
+                MCTop
+            </div>
+
             <a href="/index.php?module=news&mode=index">Новости</a>
             <a href="/index.php?module=rating">Рейтинг</a>
             <a href="/index.php?module=search&mode=server">Поиск сервера</a>
@@ -14,9 +19,13 @@
         </div>
 
         <div class="content">
-            <?php echo $motd;?>
+            <!--<?php echo $motd;?><br>
 
-            <?php echo $content;?>
+            <?php echo $initializator->core->module();?><br>
+            <?php echo $initializator->core->mode();?><br>-->
+
+            <?php require_once(root.'/design/modules/'.$initializator->core->module().'/'.$initializator->core->mode().'.php');?>
+
         </div>
 
         <div class="footer">

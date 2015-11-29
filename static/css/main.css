@@ -3,18 +3,38 @@ body {
     margin: 10px;
 }
 
-.content {
-    width: 90%;
+.navbar, .content, .footer {
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
+}
+
+.navbar {
+    background-color: #cacaca;
+    padding: 4px;
+    border-radius: 0px;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 4px;
+    font-size: 16px;
+}
+
+.navbar .logo {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content {
     border: 1px solid #969696;
     padding: 10px;
 }
 
 .footer {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     border: 1px solid #969696;
     padding: 3px;
     margin-top: 10px;
