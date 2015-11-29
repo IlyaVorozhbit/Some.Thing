@@ -7,7 +7,10 @@
 
     $initializator = new Initializator();
 
-    echo 'MOTD: Сегодня день матери, поздравьте своих мам<br>';
-    echo 'It is '.$initializator::settings()['app_name'];
+    $motd = 'MOTD: Сегодня день матери, поздравьте своих мам<br>'; // может браться из базы
+    $version = $initializator::settings()['version']; // может браться из базы
+    $content = 'It is '.$initializator::settings()['app_name'];
+
+    require_once('design/layout.php');
 
     // как бы выводить дизайн...
