@@ -3,6 +3,7 @@
     class Initializator {
 
         private static $settings;
+        public $core; // доступ к ядру
 
         public function __construct(){
 
@@ -10,6 +11,9 @@
                 echo 'Start initializing...<br>';
 
             self::$settings = require_once(root.'/settings/main.php');
+            require_once(root.'/core/core.php');
+
+            $this->core = new Core();
 
         }
 
