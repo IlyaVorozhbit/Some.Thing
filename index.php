@@ -11,4 +11,4 @@
     $version = $initializator::settings()['version']; // может браться из базы
     $content = 'It is '.$initializator::settings()['app_name'];
 
-    require_once('design/layout.php');
+    require_once('design/oldschool.php');

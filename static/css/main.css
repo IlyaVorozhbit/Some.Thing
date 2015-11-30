@@ -82,3 +82,15 @@ h1 {
     margin-top: 10px;
     text-align: center;
 }
+
+/* server-list */
+
+.server-list {
+
+}
+
+.server-list .server{
+    background-color: #cacaca;
+    padding: 4px;
+    margin: 2px;
+}

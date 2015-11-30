@@ -1,4 +1,7 @@
-<h1>MCTop: О сайте</h1>
+
+<div id="page-title">
+    <h1>MCTop: О сайте</h1>
+</div>
 
 <p><a href="/">MCTop</a> - первый в России рейтинг серверов игры Minecraft.<br><br>
 
