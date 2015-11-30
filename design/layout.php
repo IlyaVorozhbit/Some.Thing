@@ -10,7 +10,7 @@
 
         <div class="navbar">
 
-            <div class="logo"></div>
+            <div class="logo" onclick='window.location.href="/"'></div>
 
             <div class="links">
                 <div class="brand-name"><a href="/rating">МКТоп</a></div>
