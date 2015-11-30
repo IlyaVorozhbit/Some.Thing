@@ -20,14 +20,7 @@
         }
 
         public function connect_to_db(){
-
-            $db = Initializator::settings()['db'];
-
-            self::$db = new \phpsql\connectors\mysql();
-            self::$db->OpenConnection(
-                $db['user'], $db['password'], $db['server'], $db['port'], $db['db'], []
-            );
-
+            self::$db = new db;
         }
 
         public function defineModule(){

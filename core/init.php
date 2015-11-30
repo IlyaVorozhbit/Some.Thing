@@ -11,7 +11,7 @@
                 echo 'Start initializing...<br>';
 
             self::$settings = require_once(root.'/settings/main.php');
-            require_once(root.'/3rd_party/phpsql/mysql.php');
+            require_once(root.'/core/db.php');
             require_once(root.'/models/news.php');
 
             require_once(root.'/core/core.php');

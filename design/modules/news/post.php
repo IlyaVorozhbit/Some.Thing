@@ -1,5 +1,4 @@
 <?php $post = News::get_news_post_by_id($_GET['id'])?>
-<?php //var_dump($post)?>
 
 <ol class="breadcrumb">
     <li><a href="/">Новости</a></li>
