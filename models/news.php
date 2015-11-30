@@ -7,7 +7,11 @@
         }
 
         public static function get_news_post_by_id($id){
-            return Core::db()->Query('select * from mctop_news where id = 1', [$id])[0];
+            return Core::db()->Query("select * from mctop_news where id = '$id'")[0];
+        }
+
+        public static function get_posts($count = 10){
+            return Core::db()->Query("select * from mctop_news order by id desc limit $count");
         }
 
     }
