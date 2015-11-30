@@ -1,0 +1,18 @@
+# Главная ссылка в корневой директории
+DirectoryIndex index.php?module=news
+
+# Включаем mod_rewrite
+RewriteEngine On
+
+# Редирект с /index.php на /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ / [R=301,L]
+
+# если REQUEST_FILENAME не является файлом
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# и не директория т. е. папка
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# трансформируем статические линки в динамические
+RewriteRule ^(.*)$ index.php?module=$1 [L,QSA]
