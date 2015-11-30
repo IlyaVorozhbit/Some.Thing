@@ -49,6 +49,11 @@ h1 {
     display: inline;
 }
 
+.navbar .logo:hover {
+    background-image: url(/static/images/logo_hovered.jpg);
+    cursor: pointer;
+}
+
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

@@ -18,6 +18,7 @@
                 <a href="/rating">Рейтинг</a>
                 <a href="/search?mode=server">Поиск сервера</a>
                 <a href="/search?mode=company" title="Поиск компании для игры в Minecraft">Поиск компании</a>
+                <a href="/pages?mode=about">О сайте</a>
             </div>
 
         </div>
