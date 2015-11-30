@@ -12,5 +12,3 @@
     $content = 'It is '.$initializator::settings()['app_name'];
 
     require_once('design/layout.php');
-
-    // как бы выводить дизайн...

@@ -12,14 +12,22 @@
                 echo 'Core initializing';
 
             $this->connect_to_db();
+            self::$db->Query('SET NAMES utf8');
+
             $this->module = $this->defineModule();
             $this->mode = $this->defineMode();
 
         }
 
         public function connect_to_db(){
+
+            $db = Initializator::settings()['db'];
+
             self::$db = new \phpsql\connectors\mysql();
-            self::$db->OpenConnection('root', '', '127.0.0.1', '3306', 'testing', []);
+            self::$db->OpenConnection(
+                $db['user'], $db['password'], $db['server'], $db['port'], $db['db'], []
+            );
+
         }
 
         public function defineModule(){
