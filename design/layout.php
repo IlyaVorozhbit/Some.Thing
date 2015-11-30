@@ -8,14 +8,16 @@
 
         <div class="navbar">
 
-            <div class="logo">
-                MCTop
+            <div class="logo"></div>
+
+            <div class="links">
+                <div class="brand-name"><a>МКТоп</a></div>
+                <a href="/index.php?module=news&mode=index">Новости</a>
+                <a href="/index.php?module=rating">Рейтинг</a>
+                <a href="/index.php?module=search&mode=server">Поиск сервера</a>
+                <a href="/index.php?module=search&mode=company" title="Поиск компании для игры в Minecraft">Поиск компании</a>
             </div>
 
-            <a href="/index.php?module=news&mode=index">Новости</a>
-            <a href="/index.php?module=rating">Рейтинг</a>
-            <a href="/index.php?module=search&mode=server">Поиск сервера</a>
-            <a href="/index.php?module=search&mode=company" title="Поиск компании для игры в Minecraft">Поиск компании</a>
         </div>
 
         <div class="content">

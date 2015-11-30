@@ -10,23 +10,52 @@ body {
 }
 
 .navbar {
-    background-color: #cacaca;
+    background-color: #fff;
     padding: 4px;
     border-radius: 0px;
-    min-height: 30px;
-    max-height: 30px;
+    min-height: 50px;
+    max-height: 50px;
+    border: 1px solid #cacaca;
 }
 
 .navbar a {
-    color: #fff;
     padding: 4px;
-    font-size: 16px;
+    font-size: 18px;
+    position: relative;
+    top: 3px;
 }
 
 .navbar .logo {
+    background-image: url(/static/images/logo.jpg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
     display: inline;
-    font-size: 16px;
-    font-weight: bold;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.navbar .brand-name {
+    font-size: 18px;
+    display: inline;
+    position: relative;
+    left: 3px;
+}
+
+.navbar .links {
+    display: inline;
+    position: relative;
+    left: 45px;
+    top: 6px;
 }
 
 .content {
