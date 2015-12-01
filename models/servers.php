@@ -16,7 +16,7 @@
             return (object) Core::db()->selectOne('select * from mctop_servers order by id desc limit 1');
         }
 
-        public static function get_servert_by_id($id){
+        public static function get_servers_by_id($id){
             $id = (int)$id;
             return (object) Core::db()->selectOne("select * from mctop_servers where id = $id");
         }
