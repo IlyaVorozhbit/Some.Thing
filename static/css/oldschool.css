@@ -145,14 +145,21 @@ body {
 
 #top-container {
     height: 36px;
-    padding-top: 33px;
     width: 100%;
+    margin-bottom: 26px;
 }
-
+#top-menu-container {
+    display: inline-block;
+    position: relative;
+    left: 14px;
+    top: 8px;
+}
 #logo {
-    float: left;
-    width: 250px;
-    height: 116px;
+    display: inline-block;
+}
+#logo img{
+    max-width: 150px;
+    max-height: 36px;
 }
 
 #go_to_admin {
@@ -174,17 +181,10 @@ body {
     border: 0;
 }
 
-#top-menu-container {
-    float: left;
-    width: 700px;
-    height: 36px;
-}
-
 #top-menu {
     clear: both;
     font-family: "Tahoma", sans-serif;
     font-size: 17px;
-    display: table;
     margin: 0 auto;
     padding-top: 8px;
 }
@@ -261,11 +261,11 @@ body {
 }
 
 #container {
-    border-radius: 6px;
-    background: #ffffff;
-    box-shadow: 0 0 2px black;
+    border-radius: 4px;
+    background: #FFF none repeat scroll 0% 0%;
+    box-shadow: 0px 0px 2px #BABABA;
     padding: 10px;
-    width: 85%;
+    width: 95%;
 }
 
 #page-title h1 {

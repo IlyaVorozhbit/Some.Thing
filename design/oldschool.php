@@ -16,7 +16,7 @@
         <div id="main">
         <div id="top-container">
             <div id="logo">
-                <a href="/" title="Перейти на главную страницу рейтинга"><img src="/static/images/oldschool/logo.png" alt="Логотип MCTop.su" /></a>
+                <a href="/" title="Перейти на главную страницу сайта"><img src="/static/images/oldschool/logo.png" alt="Логотип MCTop.su" /></a>
             </div>
             <div id="top-menu-container">
                 <div id="top-menu">
@@ -30,18 +30,8 @@
                         <br><br>
                     </ul>
                 </div>
-                <div id="search">
-                    <form action="index.php" method="get">
-                        <table>
-                            <input type="hidden" name="a" value="search" />
-                            <tr><td><input type="text" name="q" size="38" value="" /></td></tr>
-                            <tr><td><input type="submit" value="Поиск по сайту" /></td></tr>
-                        </table>
-                    </form>
-                </div>
             </div>
         </div>
-        <div id="padding"></div>
 
         <div id="container">
 
