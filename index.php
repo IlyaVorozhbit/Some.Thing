@@ -10,7 +10,7 @@
     $initializator = new Initializator();
 
     $motd = 'MOTD: Сегодня день матери, поздравьте своих мам<br>'; // может браться из базы
-    $version = $initializator::settings()['version']; // может браться из базы
+    $version = $initializator::settings()['version'];
     $content = 'It is '.$initializator::settings()['app_name'];
 
-    require_once('design/oldschool.php');
+    require_once('design/themes/default/oldschool.php');

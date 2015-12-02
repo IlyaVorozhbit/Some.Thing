@@ -27,7 +27,9 @@
         }
 
         public function defineMode(){
-			if($_REQUEST['mode'] && preg_match("/^[a-z0-9]+$/", $_REQUEST['mode'])) return $_REQUEST['mode'];
+            if(isset($_REQUEST['mode']))
+			    if($_REQUEST['mode'] && preg_match("/^[a-z0-9]+$/", $_REQUEST['mode'])) return $_REQUEST['mode'];
+
             return "index";
         }
 
