@@ -22,11 +22,11 @@
         }
 
         public function defineModule(){
-            return isset($_GET['module'])? $_GET['module'] : 'news';
+            return isset($_REQUEST['module'])? $_REQUEST['module'] : 'news';
         }
 
         public function defineMode(){
-            return isset($_GET['mode'])? $_GET['mode'] : 'index';
+            return isset($_REQUEST['mode'])? $_REQUEST['mode'] : 'index';
         }
 
         // функции ниже потому что доступ до них - приватный

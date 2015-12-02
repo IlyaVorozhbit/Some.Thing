@@ -1,7 +1,7 @@
 
-    <?php if(isset($_GET['id']) && strlen($_GET['id'])>0):?>
+    <?php if(isset($_REQUEST['id']) && strlen($_REQUEST['id'])>0):?>
 
-        <?php $server = Servers::get_servers_by_id($_GET['id']);?>
+        <?php $server = Servers::get_servers_by_id($_REQUEST['id']);?>
 
             <?php if(isset($server->id)):?>
 
@@ -16,7 +16,7 @@
 
     <?php endif?>
 
-    <?php if(!isset($_GET['id']) || strlen($_GET['id'])==0):?>
+    <?php if(!isset($_REQUEST['id']) || strlen($_REQUEST['id'])==0):?>
         <div class="alert alert-error">Error 400</div>
     <?php endif?>
 
