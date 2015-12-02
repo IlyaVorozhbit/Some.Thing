@@ -1,7 +1,7 @@
 <?php
 
-    define('debug', false); //if debug is on, write logs to page;
-    define('root', __DIR__);
+    define('IN_DEV', true); //if debug is on, write logs to page;
+    define('ROOT_DIR', __DIR__);
 
     require_once('core/init.php');
 
