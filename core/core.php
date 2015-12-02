@@ -22,11 +22,13 @@
         }
 
         public function defineModule(){
-            return isset($_REQUEST['module'])? $_REQUEST['module'] : 'news';
+			if($_REQUEST['module'] && preg_match("/^[a-z0-9]+$/", $_REQUEST['module'])) return $_REQUEST['module'];
+            return "news";
         }
 
         public function defineMode(){
-            return isset($_REQUEST['mode'])? $_REQUEST['mode'] : 'index';
+			if($_REQUEST['mode'] && preg_match("/^[a-z0-9]+$/", $_REQUEST['mode'])) return $_REQUEST['mode'];
+            return "index";
         }
 
         // функции ниже потому что доступ до них - приватный
