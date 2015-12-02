@@ -4,18 +4,21 @@
 
         private $module;
         private $mode;
+		/**
+		 * @var MySQL_PDO Чтобы IDE понимала, что у нас тут
+		 */
         private static $db;
 
         public function __construct(){
-            $this->connect_to_db();
-            self::$db->Query('SET NAMES utf8');
+            $this->connectToDatabase();
 
             $this->module = $this->defineModule();
             $this->mode = $this->defineMode();
         }
 
-        public function connect_to_db(){
-            self::$db = new db;
+        public function connectToDatabase(){
+			$dbSettings = Initializator::settings()['db'];
+            self::$db = new MySQL_PDO($dbSettings['server'], $dbSettings['user'], $dbSettings['password'], $dbSettings['db']);
         }
 
         public function defineModule(){
