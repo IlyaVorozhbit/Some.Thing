@@ -13,9 +13,10 @@
     $version = $initializator::settings()['version'];
     $content = 'It is '.$initializator::settings()['app_name'];
 
- if (strpos($_SERVER['HTTP_REFERER'],'vk.com') !== false){ 
-	require_once('design/themes/default/vk_layout.php');
-  }
-	else 
+// if (strpos($_SERVER['HTTP_REFERER'],'vk.com') !== false){ 
+//	require_once('design/themes/default/vk_layout.php');
+ // }
+//	else
+// нужно сделать проверку на то, запуск приложения в вк это, либо просто переход по ссылке из ВК  
 	        require_once('design/themes/default/oldschool.php');
-
+	
