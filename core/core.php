@@ -4,31 +4,31 @@
 
         private $module;
         private $mode;
+		/**
+		 * @var MySQL_PDO Чтобы IDE понимала, что у нас тут
+		 */
         private static $db;
 
         public function __construct(){
-
-            if(debug)
-                echo 'Core initializing';
-
-            $this->connect_to_db();
-            self::$db->Query('SET NAMES utf8');
+            $this->connectToDatabase();
 
             $this->module = $this->defineModule();
             $this->mode = $this->defineMode();
-
         }
 
-        public function connect_to_db(){
-            self::$db = new db;
+        public function connectToDatabase(){
+			$dbSettings = Initializator::settings()['db'];
+            self::$db = new MySQL_PDO($dbSettings['server'], $dbSettings['user'], $dbSettings['password'], $dbSettings['db']);
         }
 
         public function defineModule(){
-            return isset($_GET['module'])? $_GET['module'] : 'news';
+			if($_REQUEST['module'] && preg_match("/^[a-z0-9]+$/", $_REQUEST['module'])) return $_REQUEST['module'];
+            return "news";
         }
 
         public function defineMode(){
-            return isset($_GET['mode'])? $_GET['mode'] : 'index';
+			if($_REQUEST['mode'] && preg_match("/^[a-z0-9]+$/", $_REQUEST['mode'])) return $_REQUEST['mode'];
+            return "index";
         }
 
         // функции ниже потому что доступ до них - приватный

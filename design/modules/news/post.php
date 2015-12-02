@@ -1,4 +1,4 @@
-<?php $post = News::get_news_post_by_id($_GET['id'])?>
+<?php $post = News::get_news_post_by_id($_REQUEST['id'])?>
 
 <div class="news-block">
     <div class="news-title"><?php echo $post['title'];?></div>

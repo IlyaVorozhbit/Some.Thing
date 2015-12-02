@@ -1,7 +1,9 @@
 <?php
 
-    define('debug', false); //if debug is on, write logs to page;
-    define('root', __DIR__);
+    define('IN_DEV', true); //if debug is on, write logs to page;
+    define('ROOT_DIR', __DIR__);
+
+	@ini_set("display_errors", IN_DEV); // Вывод ошибок в релизе стоит отключить из соображений безопасности. Они будут писаться в лог.
 
     require_once('core/init.php');
 
