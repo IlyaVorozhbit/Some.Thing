@@ -1,9 +1,46 @@
-SET FOREIGN_KEY_CHECKS=0;
 
--- ----------------------------
--- Table structure for `mctop_servers`
--- ----------------------------
-DROP TABLE IF EXISTS `mctop_servers`;
+CREATE TABLE `mctop_users` (
+  `id` int(25) NOT NULL DEFAULT '0',
+  `vk_id` int(25) DEFAULT NULL,
+  `name` varchar(90) DEFAULT NULL,
+  `server` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `mctop_admins` (
+  `admin` varchar(25) NOT NULL DEFAULT '',
+  `password` varchar(32) DEFAULT NULL,
+  `name` varchar(32) DEFAULT NULL,
+  `level` varchar(32) DEFAULT NULL,
+  PRIMARY KEY (`admin`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE `mctop_etc` (
+  `admin_password` varchar(32) DEFAULT '',
+  `last_new_day` tinyint(4) DEFAULT '0',
+  `last_new_week` tinyint(4) DEFAULT '0',
+  `last_new_month` tinyint(4) DEFAULT '0',
+  `version` varchar(255) DEFAULT '0',
+  `original_version` varchar(255) DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=cp1251;
+
+INSERT INTO `mctop_etc` VALUES ('NLO', '22', '47', '11', '5.2.0', '5.2.0');
+
+CREATE TABLE `mctop_news` (
+`id`  int UNSIGNED NOT NULL AUTO_INCREMENT ,
+`title`  varchar(255) NOT NULL ,
+`preview`  varchar(255) NOT NULL ,
+`full`  text NOT NULL ,
+`author_id`  int UNSIGNED NULL ,
+`created_at`  timestamp NULL ,
+PRIMARY KEY (`id`)
+)
+;
+
+ALTER TABLE `mctop_news`
+MODIFY COLUMN `author_id`  int(10) UNSIGNED NULL DEFAULT NULL AFTER `title`,
+ADD COLUMN `active`  tinyint NOT NULL DEFAULT 1 AFTER `full`;
+
 CREATE TABLE `mctop_servers` (
   `id` bigint(15) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(255) NOT NULL DEFAULT '',

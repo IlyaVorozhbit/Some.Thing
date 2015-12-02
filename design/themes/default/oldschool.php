@@ -35,7 +35,7 @@
 
         <div id="container">
 
-            <?php require_once(ROOT_DIR.'/design/modules/'.$initializator->core->module().'/'.$initializator->core->mode().'.php');?>
+            <?php require_once('modules/'.$initializator->core->module().'/'.$initializator->core->mode().'.php');?>
 
             <!--<br>
             <div id="page-numbers">
