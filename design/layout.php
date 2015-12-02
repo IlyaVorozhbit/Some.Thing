@@ -32,7 +32,7 @@
             <?php echo $initializator->core->module();?><br>
             <?php echo $initializator->core->mode();?><br>-->
 
-            <?php require_once(root.'/design/modules/'.$initializator->core->module().'/'.$initializator->core->mode().'.php');?>
+            <?php require_once(ROOT_DIR.'/design/modules/'.$initializator->core->module().'/'.$initializator->core->mode().'.php');?>
 
         </div>
 

@@ -6,16 +6,12 @@
         public $core; // доступ к ядру
 
         public function __construct(){
+            self::$settings = require_once(ROOT_DIR.'/settings/main.php');
+            require_once(ROOT_DIR.'/core/MySQL_PDO.php');
+            require_once(ROOT_DIR.'/models/servers.php');
+            require_once(ROOT_DIR.'/models/news.php');
 
-            if(debug)
-                echo 'Start initializing...<br>';
-
-            self::$settings = require_once(root.'/settings/main.php');
-            require_once(root.'/core/db.php');
-            require_once(root.'/models/servers.php');
-            require_once(root.'/models/news.php');
-
-            require_once(root.'/core/core.php');
+            require_once(ROOT_DIR.'/core/core.php');
 
             $this->core = new Core();
 
