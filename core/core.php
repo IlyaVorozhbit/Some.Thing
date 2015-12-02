@@ -7,16 +7,11 @@
         private static $db;
 
         public function __construct(){
-
-            if(debug)
-                echo 'Core initializing';
-
             $this->connect_to_db();
             self::$db->Query('SET NAMES utf8');
 
             $this->module = $this->defineModule();
             $this->mode = $this->defineMode();
-
         }
 
         public function connect_to_db(){
