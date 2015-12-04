@@ -22,13 +22,13 @@
         }
 
         public function defineModule(){
-			if($_REQUEST['module'] && preg_match("/^[a-z0-9]+$/", $_REQUEST['module'])) return $_REQUEST['module'];
+			if($_GET['module'] && preg_match("/^[a-z0-9]+$/", $_GET['module'])) return $_GET['module'];
             return "news";
         }
 
         public function defineMode(){
-            if(isset($_REQUEST['mode']))
-			    if($_REQUEST['mode'] && preg_match("/^[a-z0-9]+$/", $_REQUEST['mode'])) return $_REQUEST['mode'];
+            if(isset($_GET['mode']))
+			    if($_GET['mode'] && preg_match("/^[a-z0-9]+$/", $_GET['mode'])) return $_GET['mode'];
 
             return "index";
         }
