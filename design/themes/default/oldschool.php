@@ -16,7 +16,7 @@
         <div id="main">
         <div id="top-container">
             <div id="logo">
-                <a href="/" title="Перейти на главную страницу сайта"><img src="/static/images/oldschool/logo.png" alt="Логотип MCTop.su" /></a>
+                <a href="/" title="Перейти на главную страницу сайта"><img src="/static/images/oldschool/logo.png" alt="Логотип MCTop" /></a>
             </div>
             <div id="top-menu-container">
                 <div id="top-menu">
@@ -50,7 +50,7 @@
             <ul class="bNav">
                 <li><a href="/pages?mode=about">О сайте</a></li>
                 <li><a href="/pages?mode=rules">Правила</a></li>
-                <li><a target="_blank" href="http://vkontakte.ru/mctop.onvay">Мы В Контакте</a></li>
+                <li><a target="_blank" href="http://vkontakte.ru/mctop.official">Мы ВКонтакте</a></li>
             </ul>
         </div>
 
