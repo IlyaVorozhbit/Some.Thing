@@ -1,6 +1,6 @@
 
 <div id="page-title">
-    <h1>MCTop: О сайте</h1>
+    <h1>MCTop: О сайте <g:plusone></g:plusone></h1>
 </div>
 
 <p><a href="/">MCTop</a> - первый в России рейтинг серверов игры Minecraft.<br><br>
@@ -22,7 +22,7 @@
 
 <h2>Мы в Сети</h2><hr>
 
-<p>ВКонтакте: <a href="http://vk.com/mctop.onvay" target="_blank">http://vk.com/mctop.onvay</a></p>
+<p>ВКонтакте: <a href="http://vk.com/mctop.onvay" target="_blank">http://vk.com/mctop.official</a></p>
 
 <p>Google+: <a href="https://plus.google.com/b/114997155561494426361/114997155561494426361" target="_blank">https://plus.google.com/b/114997155561494426361/114997155561494426361</a></p>
 
