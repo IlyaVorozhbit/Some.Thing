@@ -18,4 +18,4 @@ Some.Thing - гениальная, родившаяся за считанные 
 
 ВКонтакте: http://vk.com/mctop.official
 
-Так же, Вы можете присоединиться к чату разработчиков MCTop на Gitter: https://gitter.im/IlyaVorozhbit/some.thing
+Так же, Вы можете присоединиться к чату разработчиков MCTop на Gitter: [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/IlyaVorozhbit/Some.Thing?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
