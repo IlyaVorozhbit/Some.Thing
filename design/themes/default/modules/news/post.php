@@ -6,7 +6,7 @@
     <div class="news-content">
         <p><?php echo $post['full']?></p>
     </div>
-    <a href="/news">Ко всем новостям</a>
+    <a href="/news">Ко всем новостям Minecraft-Sunlight</a>
 </div>
 <div align="center" id="test" ><br>
 

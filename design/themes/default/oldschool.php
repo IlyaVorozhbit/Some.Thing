@@ -2,7 +2,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="Keywords" content="Рейтинг серверов,  MINECRAFT TOP SERVERS, mctop, minecraft server, server minecraft, minecraft сервер, Minecraft Server, Сервер Minecraft, top серверов Minecraft, MCtop.su" />
-    <title>MCTop: Рейтинг серверов Minecraft</title>
+    <title>Minecraft-Sunlight - MCTop.Servers</title>
     <link href="/static/css/oldschool.css" rel="stylesheet" type="text/css" />
     <link href="/static/css/tooltip.css" rel="stylesheet" type="text/css" />
     <script src="/static/js/jquery.min.js" type="text/javascript"></script>
@@ -22,9 +22,8 @@
                 <div id="top-menu">
                     <ul>
                         <li><a href="/news" title="Свежие новости рейтинга">Новости</a></li>
-                        <li><a href="/rating" title="Рейтинг">Рейтинг</a></li>
                         <li><a href="/search" title="Поиск">Поиск</a></li>
-                        <li><a href="/cp" title="Управление сервером">КП</a></li>
+                        <li><a href="/login" title="Вход на сайт">Вход на сайт</a></li>
                         <li><a href="/pages?mode=register" title="Регистрация">Регистрация</a></li>
                         <li><a href="/pages?mode=about" title="О сайте">О сайте</a></li>
                         <br><br>
