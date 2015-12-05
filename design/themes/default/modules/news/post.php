@@ -2,7 +2,7 @@
 
 <div class="news-block">
     <div class="news-title"><?php echo $post['title'];?></div>
-    <div class="news-info">Дата: <?php echo date('H:i:s, d/m/Y', strtotime($post['created_at']))?> | Автор:  <?php echo $post['author_id']?></div>
+    <div class="news-info">Дата: <?php echo date('H:i:s, d/m/Y', strtotime($post['created_at']))?> | Автор:  <?php echo $post['author_id']?> | Просмотров:  <?php echo $post['views']?></div>
     <div class="news-content">
         <p><?php echo $post['full']?></p>
     </div>
