@@ -2,7 +2,7 @@
 <?php $news = News::get_posts();?>
 
 <div id="page-title">
-    <h1>Новости</h1>
+    <h1>Новости Minecraft-Sunlight</h1>
 </div>
 
     <div class="news-list">
