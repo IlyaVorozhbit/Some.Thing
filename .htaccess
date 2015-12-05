@@ -4,6 +4,8 @@ DirectoryIndex index.php?module=news
 # Включаем mod_rewrite
 RewriteEngine On
 
+RewriteRule ^news/post/([A-Za-z0-9-_/]+)?$ index.php?module=news&mode=post&id=$1 [L,QSA]
+
 # Редирект с /index.php на /
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
 RewriteRule ^index\.php$ / [R=301,L]
@@ -16,5 +18,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # трансформируем статические линки в динамические
 RewriteRule ^(.*)$ index.php?module=$1 [L,QSA]
+
+
 
 
