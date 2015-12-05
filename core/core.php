@@ -11,6 +11,7 @@
         private static $f; // Core functions SubSystem 
 
         public function __construct(){
+			self::$f = new CoreFunctionsSubSystem;
             $this->connectToDatabase();
 
             $this->module = $this->defineModule();
@@ -20,7 +21,6 @@
         public function connectToDatabase(){
 			$dbSettings = Initializator::settings()['db'];
             self::$db = new MySQL_PDO($dbSettings['server'], $dbSettings['user'], $dbSettings['password'], $dbSettings['db']);
-			self::$f = new CoreFunctionsSubSystem;
         }
 
         public function defineModule(){
