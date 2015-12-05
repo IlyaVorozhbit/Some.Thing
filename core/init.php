@@ -8,6 +8,7 @@
         public function __construct(){
             self::$settings = require_once(ROOT_DIR.'/settings/main.php');
             require_once(ROOT_DIR.'/core/MySQL_PDO.php');
+            require_once(ROOT_DIR.'/core/CFSS.php');
             require_once(ROOT_DIR.'/models/servers.php');
             require_once(ROOT_DIR.'/models/news.php');
 

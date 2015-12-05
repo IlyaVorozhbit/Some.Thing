@@ -8,6 +8,7 @@
 		 * @var MySQL_PDO Чтобы IDE понимала, что у нас тут
 		 */
         private static $db;
+        private static $f; // Core functions SubSystem 
 
         public function __construct(){
             $this->connectToDatabase();
@@ -19,6 +20,7 @@
         public function connectToDatabase(){
 			$dbSettings = Initializator::settings()['db'];
             self::$db = new MySQL_PDO($dbSettings['server'], $dbSettings['user'], $dbSettings['password'], $dbSettings['db']);
+			self::$f = new CoreFunctionsSubSystem;
         }
 
         public function defineModule(){
@@ -44,6 +46,10 @@
 
         public static function db(){
             return self::$db;
+        }
+		
+		public static function f(){
+            return self::$f;
         }
 
     }
