@@ -9,6 +9,7 @@
 		 */
         private static $db;
         private static $f; // Core functions SubSystem 
+		private static $status = 0;
 
         public function __construct(){
 			self::$f = new CoreFunctionsSubSystem;
@@ -44,7 +45,24 @@
             return $this->mode;
         }
 
-        public static function db(){
+        public static function status(){
+            return self::$status;
+        }
+		
+		public static function statusIsOkey(){
+			
+			if(self::$status == 0)
+				return true;
+			
+			return false;
+		}
+		
+		public static function statusChange($value){
+			//todo log: warning, status is changing
+            self::$status = $value;
+        }
+		
+		public static function db(){
             return self::$db;
         }
 		
