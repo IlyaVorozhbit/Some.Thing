@@ -11,20 +11,12 @@
 	</div>
 	<div align="center" id="test" ><br>
 
-		<script type="text/javascript">
-			VK.init({apiId: 4585317, onlyWidgets: true});
-		</script>
-
 		<div id="vk_comments"></div>
 		<script type="text/javascript">
 			VK.Widgets.Comments("vk_comments", {limit: 5, width: "665", attach: false});
 		</script>
 		<hr>
 
-		<div id="vk_like"></div>
-		<script type="text/javascript">
-			VK.Widgets.Like("vk_like", {type: "button"});
-		</script>
 	</div>
 <?php endif?>
 

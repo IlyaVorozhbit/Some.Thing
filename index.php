@@ -1,5 +1,10 @@
 <?php
 
+    define('IS_LOCAL', true); // if is true - don't redirect us to mctop.me
+
+    if(!IS_LOCAL && $_SERVER['HTTP_HOST'] != 'mctop.me')
+        header('location: http://mctop.me');
+
     define('IN_DEV', false); //if debug is on, write logs to page;
     define('ROOT_DIR', __DIR__);
 
