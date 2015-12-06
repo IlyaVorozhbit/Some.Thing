@@ -2,7 +2,7 @@
 <?php $news = News::get_posts();?>
 
 <div id="page-title">
-    <h1>Новости</h1>
+    <h1>Новости <g:plusone></g:plusone></h1> 
 </div>
 
     <div class="news-list">

@@ -8,7 +8,21 @@
 
         public static function get_news_post_by_id($id){
             $id = (int)$id;
-            return Core::db()->selectOne("SELECT * FROM `mctop_news` WHERE `id` = ?", [$id]);
+            $post = Core::db()->selectOne("SELECT * FROM `mctop_news` WHERE `id` = ?", [$id]);
+			
+			if(!$post) // поста не нашлось
+				return ['error' => 404];
+			else
+			{			
+				$c = Core::f()->cookieRead('post_'.$id.'_viewed');
+				
+				if(is_null($c)) {
+					Core::f()->cookieWrite('post_'.$id.'_viewed', 1, 24*60*60);
+					Core::db()->runQuery("UPDATE `mctop_news` set views = views+1 where `id` = ?", [$id]);
+				}
+
+				return $post;
+			}
         }
 
         public static function get_posts($count = 10){
