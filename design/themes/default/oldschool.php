@@ -67,7 +67,7 @@
                         </ul>
                     </div>
                     <div class="footer__row">
-                        <div class="copyright">© <a target="_blank" href="/static/images/mine_serv_screen.png">30.01.2011</a> - 2015. <a href="/pages?mode=about"> MCTop.Team</a>
+                        <div class="copyright">© <a target="_blank" href="/static/images/mine_serv_screen.png">30.01.2011</a> - <?= date('Y') ?>. <a href="/pages?mode=about"> MCTop.Team</a>
                             <br /><a style="font-size: 10px; text-decoration: underline;" href="https://github.com/IlyaVorozhbit/Some.Thing">Версия Some.Thing: <?php echo $version; ?></a>
                         </div>
                         <div class="counters" <?php if ($initializator->core->mode() != 'about'): ?>style="display:none;"<?php endif ?>><br />
