@@ -5,9 +5,9 @@
 /* CSS Document */
 
 /*
-	Design: D1mK4
-	Development: D1mK4
-	E-mail: d1mk4x(at)gmail(dot)com
+        Design: D1mK4
+        Development: D1mK4
+        E-mail: d1mk4x(at)gmail(dot)com
 */
 
 html, body { background-color: #FFED70;}
@@ -123,11 +123,11 @@ div.message_success  p { background-image: url('/static/images/oldschool/success
 div.message_notice { border-color: #a6b7ed; background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #cad4f8), color-stop(.99, #dbe3ff), color-stop(1, #e6ecff)); background: -moz-linear-gradient(bottom, #cad4f8 0%, #dbe3ff 98%, #e6ecff 99%); background-color: #dbe3ff;}
 div.message_notice p { background-image: url('/static/images/oldschool/info.png'); }
 
-#bFooter { clear: both; font-size: 12px; line-height: 15px; padding: 5px 0px 0px 0px; text-align: center; margin: 0; color:#000;}
-#bFooter A{ font-size: 12px; color:#000;}
-#bFooter A:hover{ text-decoration: underline !important;}
+footer { font-size: 12px; color: #000; }
+.footer__row { padding-top: 5px; text-align: center; }
+.footer__row a { font-size: 12px; color: #000; }
+.footer__row a:hover { text-decoration: underline !important; }
 ul.bNav { font-size: 11px; list-style: none; margin: 0; padding: 2px 0; text-align: center;}
-a:bFooter { color:#000;}
 .bNav li { display: inline; margin-left: 6px;}
 
 ul { display: block; list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0px; -webkit-margin-end: 0px; -webkit-padding-start: 40px;}
