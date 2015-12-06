@@ -63,7 +63,7 @@
                             <li><a href="/pages?mode=about">Об MCTop</a></li>
                             <li><a href="/pages?mode=rules">Правила</a></li>
                             <li><a href="/pages?mode=sitemap">Карта сайта</a></li>
-                            <li><a target="_blank" href="http://vkontakte.ru/mctop.official">Мы ВКонтакте</a></li>
+                            <li><a target="_blank" href="https://vk.com/mctop.official">Мы ВКонтакте</a></li>
                         </ul>
                     </div>
                     <div class="footer__row">
