@@ -2,8 +2,20 @@
 
     if(isset($_GET['code']))
     {
-        $test = file_get_contents_curl('https://oauth.vk.com/access_token?client_id='.APP_ID.'&client_secret='.APP_SHARED_SECRET.'&redirect_uri=http://some.thing/cp&code='.$_GET['code']);
-        var_dump($test);
+        $answer = file_get_contents_curl('https://oauth.vk.com/access_token?client_id='.APP_ID.'&client_secret='.APP_SHARED_SECRET.'&redirect_uri=http://some.thing/cp&code='.$_GET['code']);
+        $answer = json_decode($answer);
+
+        if(!isset($answer->error)){
+            $url = 'https://api.vk.com/method/users.get?user_id='.$answer->user_id.'&fields=bdate&access_token='.$answer->access_token;
+            $answer = json_decode(file_get_contents_curl($url));
+            $user = $answer->response[0]; // uid, first_name, last_name, bdate
+
+            $time = strtotime($user->bdate);
+            echo date("Y-m-d H:i:s", $time);
+        }
+        else
+            echo '<p style="position: relative; top: -10px; bottom: -7px; color: #fff; padding: 9px; background-color: #ff696e;">Вам необходимо нажать на кнопку "Разрешить" на странице авторизации во ВКонтакте</p>';
+
     }
 
     if(isset($_GET['error_description']))

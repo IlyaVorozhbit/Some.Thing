@@ -1,4 +1,4 @@
 <?php
 
-    const APP_ID = 'app_id';
-    const APP_SHARED_SECRET = 'secret_key';
+    const APP_ID = '4585317';
+    const APP_SHARED_SECRET = 'YA2RGADRA8GO16IST16RA8';
