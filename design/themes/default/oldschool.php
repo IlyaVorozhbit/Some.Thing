@@ -24,7 +24,7 @@
             </div>
 
             <div class="top-menu">
-                <a href="/pages?mode=konkurs_1" title="Конкурс на разработку дизайна">Конкурс от MCTop</a>
+                <a href="/news/post/15" title="Конкурс на разработку дизайна">Конкурс от MCTop</a>
                 <a href="/news" title="Свежие новости рейтинга">Новости</a>
                 <a href="/rating" title="Рейтинг">Рейтинг</a>
                 <a href="/search" title="Поиск наиболее подходящего Вам и Вашим друзьям сервера">Поиск сервера</a>
@@ -48,7 +48,7 @@
                         Core::f()->abort();
                 ?>
 
-                <h2 style="border-bottom: 1px solid #cacaca; color: #000000;">Нравится сайт? Нажми "Мне нравится"</h2>
+                <h2 style="font-size: 10px; border-bottom: 1px solid #e5e5e5; color: #000000;">Нравится сайт? Нажми "Мне нравится"</h2>
                 <div id="vk_like"></div>
                 <script type="text/javascript">
                     VK.Widgets.Like("vk_like", {type: "button"});
