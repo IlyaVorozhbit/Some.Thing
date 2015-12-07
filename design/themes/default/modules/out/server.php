@@ -6,7 +6,7 @@
             <?php if(isset($server->id)):?>
 
                 <div id="page-title">
-                    <h1>Выход с рейтинга</h1>
+                    <h1><?php Servers::pure($server->title)?>: Выход с Рейтинга <g:plusone></g:plusone></h1>
                     <?php
                     echo '<a href="'.$server->url.'">Совершить переход на сайт проекта '.$server->title.'</a>';
                 ?>

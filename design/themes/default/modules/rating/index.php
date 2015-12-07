@@ -3,7 +3,7 @@
 ?>
 
 <div id="page-title">
-    <h1>Рейтинг серверов Minecraft</h1>
+    <h1>Рейтинг серверов Minecraft <g:plusone></g:plusone></h1>
 </div>
 
 <div class="server-list">

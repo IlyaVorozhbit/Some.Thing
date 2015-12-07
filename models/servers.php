@@ -53,7 +53,7 @@
         }
 
         public static function pure($str){
-            echo $str; //todo: Обезопасить входные данные перед выводом
+            echo htmlspecialchars($str,ENT_QUOTES);
         }
 
         public static function version($obj){
