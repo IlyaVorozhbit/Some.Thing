@@ -33,6 +33,7 @@ body { margin: 0px; padding: 0px; direction: ltr;}
 #padding { margin: 0 auto; padding-top: 45px; padding-bottom: 33px;}
 #container { border-radius: 4px; background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 0px 2px #BABABA; padding: 10px; width: 95%;}
 #page-title h1 { color: #545454; font-size: 21px;  margin: 0;  border-bottom: 1px solid #d4d4d4;  padding-bottom: 5px; padding-left: 5px;}
+h1 { color: #545454; font-size: 21px;  margin: 0;  border-bottom: 1px solid #d4d4d4;  padding-bottom: 5px; padding-left: 5px;}
 
 .news-block { padding-top: 10px; border-bottom: 1px dotted #dedede;}
 .news-title { font-family: "Arial", sans-serif; font-size: 16px;}
@@ -127,4 +128,6 @@ li { display: list-item; text-align: -webkit-match-parent;}
 .header { padding-top: 10px; min-height: 70px; background-color:#fff; margin-left: auto; margin-right: auto; text-align: center; width: 100%; margin-bottom: 20px;}
 .top-menu { background-color:#fff; padding: 20px; font-size: 17px;}
 .top-menu a {margin: 5px; color: #000;text-shadow: 1px 1px 2px #a0fdff, 0 0 1em #8fe7ff; }
+.top-menu a:hover {margin: 5px; color: #000;text-shadow: 1px 1px 2px #a29ea8, 0 0 1em #787881; }
 .about p {font-size: 13px;}
+.page-content { margin-bottom: 5px; margin-top: 5px; padding: 5px; border: 1px solid #cacaca;}

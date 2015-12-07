@@ -66,14 +66,15 @@
             <footer>
                 <div class="footer__row">
                     <ul class="bNav">
-                        <li><a href="/pages?mode=about">Об MCTop</a></li>
+                        <li><a href="/pages?mode=about">О сайте</a></li>
+                        <li><a href="/pages?mode=developers" title="Разработчикам и всем тем, кому интересно развитие MCTop">Разработчикам</a></li>
                         <li><a href="/pages?mode=rules">Правила</a></li>
                         <li><a href="/pages?mode=sitemap">Карта сайта</a></li>
                         <li><a target="_blank" href="https://vk.com/mctop.official">Мы ВКонтакте</a></li>
                     </ul>
                 </div>
                 <div class="footer__row">
-                    <div class="copyright">© <a target="_blank" href="/static/images/mine_serv_screen.png">2011</a> - <?= date('Y') ?>. <a href="/pages?mode=about"> MCTop.Team</a>
+                    <div class="copyright">© <a title="Появление первой версии проекта по адресу mine-serv.do.am" target="_blank" href="/static/images/mine_serv_screen.png">2011</a> - <?= date('Y') ?>. <a title="Первый. Верный" href="/pages?mode=about"> MCTop.Team</a>
                         <div class="engine" <?php if ($initializator->core->mode() != '.'): ?>style="display:none;"<?php endif ?>>
                             <a style="font-size: 10px; text-decoration: underline;" href="https://github.com/IlyaVorozhbit/Some.Thing">Версия Some.Thing: <?php echo $version; ?></a>
                         </div>
@@ -92,6 +93,7 @@
 
                         </script>
                     </div>
+                    <br><br>
                 </div>
                 <br>
             </footer>
