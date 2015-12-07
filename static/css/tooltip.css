@@ -15,15 +15,16 @@
 /* CSS Document */
 
 .tooltip {
-	background-color: #7c878c;
-	border-radius: 3px;
-	color: #ffffff;	
-	display: none;
-	font-family: "Tahoma", sans-serif;
-	font-size: 14px;
-	height: auto;
-	margin: 0;
-	padding: 5px;
-	width: auto;
-	z-index: 99;
+    background-color: #A3DDF7;
+    border: 1px solid #6EBAE6;
+    border-radius: 3px;
+    color: #000000;
+    display: none;
+    font-family: "Tahoma", sans-serif;
+    font-size: 11px;
+    height: auto;
+    margin: 0;
+    padding: 5px;
+    width: auto;
+    z-index: 99;
 }

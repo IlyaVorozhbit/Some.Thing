@@ -1,28 +1,18 @@
-/*  FILE ARCHIVED ON 20:47:08 дек 21, 2011 AND RETRIEVED FROM THE  INTERNET ARCHIVE ON 12:12:22 ноя 30, 2015.  JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-  ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.  SECTION 108(a)(3)).
-*/
-@charset "utf-8";
-/* CSS Document */
+/* Design: D1mK4; Development: D1mK4; E-mail: d1mk4x(at)gmail(dot)com */
 
-/*
-        Design: D1mK4
-        Development: D1mK4
-        E-mail: d1mk4x(at)gmail(dot)com
-*/
+html, body { background-color: #f4f4f4;}
 
-html, body { background-color: #FFED70;}
-#help_us { float: left; padding-top: 50px; padding-left: -40px; z-index:1;}
-
+h2 { border-bottom: 1px solid #cacaca; margin: 0px; margin-bottom: 4px; padding: 3px;}
 a { color: #2B587A; text-decoration: none; cursor: pointer;}
 
 table, body,input ,textarea{ font-family: tahoma, arial, verdana, sans-serif, Lucida Sans; font-size: 11px; color:#000;}
-body { margin: 0px; margin-left: 50px; padding: 0px; direction: ltr;}
+body { margin: 0px; padding: 0px; direction: ltr;}
 
-#main { width: 950px; margin: 0 auto; }
+#main { width: 80%; margin-left: auto; margin-right: auto;}
 #top-container { height: 36px; width: 100%; margin-bottom: 26px;}
-#top-menu-container { display: inline-block; position: relative; left: 14px; top: 8px;}
+#top-menu-container { display: inline-block; position: relative; left: 14px;}
 #logo { display: inline-block;}
-#logo img{ max-width: 150px; max-height: 36px;}
+#logo img{ }
 #logo img { border: 0;}
 
 #go_to_admin { position: fixed; float: left; padding-top: 10px; padding-left: 4px; z-index:1;}
@@ -31,8 +21,8 @@ body { margin: 0px; margin-left: 50px; padding: 0px; direction: ltr;}
 #top-menu { clear: both; font-family: "Tahoma", sans-serif; font-size: 17px; margin: 0 auto; padding-top: 8px;}
 #top-menu ul { margin: 0; padding: 0; padding-left: 0px;}
 #top-menu li { float: left; list-style-type: none; padding-right: 20px;}
-#top-menu a { color: #525252; text-decoration: underline;}
-#top-menu a:hover { color: #fff; text-decoration: underline;}
+#top-menu a { color: #525252;}
+#top-menu a:hover { color: #cacaca; text-decoration: underline;}
 
 #cp-menu { clear: both; font-family: tahoma, arial, verdana, sans-serif, Lucida Sans; font-size: 11px; display: table; margin: 0 auto; padding-top: 8px;}
 #cp-menu ul { margin: 0; padding: 0; padding-left: 30px;}
@@ -42,7 +32,7 @@ body { margin: 0px; margin-left: 50px; padding: 0px; direction: ltr;}
 
 #padding { margin: 0 auto; padding-top: 45px; padding-bottom: 33px;}
 #container { border-radius: 4px; background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 0px 2px #BABABA; padding: 10px; width: 95%;}
-#page-title h1 { color: #545454; font-family: "Georgia", sans-serif; font-size: 20px; margin: 0; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px; padding-left: 5px; margin-bottom: 5px;}
+#page-title h1 { color: #545454; font-size: 21px;  margin: 0;  border-bottom: 1px solid #d4d4d4;  padding-bottom: 5px; padding-left: 5px;}
 
 .news-block { padding-top: 10px; border-bottom: 1px dotted #dedede;}
 .news-title { font-family: "Arial", sans-serif; font-size: 16px;}
@@ -133,3 +123,8 @@ ul.bNav { font-size: 11px; list-style: none; margin: 0; padding: 2px 0; text-ali
 ul { display: block; list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0px; -webkit-margin-end: 0px; -webkit-padding-start: 40px;}
 li { display: list-item; text-align: -webkit-match-parent;}
 #search{ position:relative; left:110px; top:-15px; }
+
+.header { padding-top: 10px; min-height: 70px; background-color:#fff; margin-left: auto; margin-right: auto; text-align: center; width: 100%; margin-bottom: 20px;}
+.top-menu { background-color:#fff; padding: 20px; font-size: 17px;}
+.top-menu a {margin: 5px; color: #000;text-shadow: 1px 1px 2px #a0fdff, 0 0 1em #8fe7ff; }
+.about p {font-size: 13px;}
