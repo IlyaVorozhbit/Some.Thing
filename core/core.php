@@ -2,8 +2,11 @@
 
     class Core {
 
-        private $module;
-        private $mode;
+        private static $some_core;
+        private static $some_register = [];
+
+        private static $module;
+        private static $mode;
 		/**
 		 * @var MySQL_PDO Чтобы IDE понимала, что у нас тут
 		 */
@@ -12,11 +15,15 @@
 		private static $status = 0;
 
         public function __construct(){
+
+            self::$some_core = $this;
+            self::$some_register = [];
+
 			self::$f = new CoreFunctionsSubSystem;
             $this->connectToDatabase();
 
-            $this->module = $this->defineModule();
-            $this->mode = $this->defineMode();
+            self::$module = $this->defineModule();
+            self::$mode = $this->defineMode();
         }
 
         public function connectToDatabase(){
@@ -38,11 +45,11 @@
 
         // функции ниже потому что доступ до них - приватный
         public function module(){
-            return $this->module;
+            return self::$module;
         }
 
         public function mode(){
-            return $this->mode;
+            return self::$mode;
         }
 
         public static function status(){
@@ -51,9 +58,13 @@
 		
 		public static function statusIsOkey(){
 			
-			if(self::$status == 0)
-				return true;
-			
+			if(self::$status == 0) {
+
+                Core::set('html_title', 'Главная страница');
+                return true;
+
+            }
+
 			return false;
 		}
 		
@@ -68,6 +79,25 @@
 		
 		public static function f(){
             return self::$f;
+        }
+
+        public static function set($key = '', $value){
+
+            // Использование данной статической функции в контексте:
+            // Core::set('html_title', 'Новости Minecraft'); // Записать значение в Some.Регистр
+
+            // Core::get('html_title');
+            // Получить значения из Some.Регистра по ключу
+
+            self::$some_register[$key] = $value;
+        }
+
+        public static function get($name = ''){
+
+            // Использование данной статической функции в контексте:
+            // Core::get('html_title');
+
+            return self::$some_register[$name];
         }
 
     }

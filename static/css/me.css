@@ -14,6 +14,7 @@ body { margin: 0px; padding: 0px; direction: ltr;}
 #logo { display: inline-block;}
 #logo img{ }
 #logo img { border: 0;}
+#logo img:hover { border: 0;}
 
 #go_to_admin { position: fixed; float: left; padding-top: 10px; padding-left: 4px; z-index:1;}
 #logout_of_admin { position: fixed; float: left; padding-top: 10px; padding-left: 118px;}
@@ -126,7 +127,7 @@ li { display: list-item; text-align: -webkit-match-parent;}
 #search{ position:relative; left:110px; top:-15px; }
 
 .header { padding-top: 10px; min-height: 70px; background-color:#fff; margin-left: auto; margin-right: auto; text-align: center; width: 100%; margin-bottom: 20px;}
-.top-menu { background-color:#fff; padding: 20px; font-size: 17px;}
+.top-menu { text-transform: uppercase;padding: 20px; font-size: 18px;}
 .top-menu a {margin: 5px; color: #000;text-shadow: 1px 1px 2px #a0fdff, 0 0 1em #8fe7ff; }
 .top-menu a:hover {margin: 5px; color: #000;text-shadow: 1px 1px 2px #a29ea8, 0 0 1em #787881; }
 .about p {font-size: 13px;}

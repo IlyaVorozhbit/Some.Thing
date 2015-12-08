@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="Keywords" content="Рейтинг серверов,  MINECRAFT TOP SERVERS, mctop, minecraft server, server minecraft, minecraft сервер, Minecraft Server, Сервер Minecraft, top серверов Minecraft, MCtop.su" />
-        <title>MCTop: Рейтинг серверов Minecraft</title>
-        <link rel="stylesheet" href="/static/css/oldschool.css" />
+        <title><?php echo $initializator::settings()['app_name']?> - <?php echo Core::get('html_title')?></title>
+        <link rel="stylesheet" href="http://vay.im/static/css/main_styles/concepts/main.css" />
+        <link rel="stylesheet" href="/static/css/me.css" />
         <link rel="stylesheet" href="/static/css/tooltip.css" />
         <script src="/static/js/jquery.min.js" type="text/javascript"></script>
         <script src="/static/js/jquery.tools.min.js" type="text/javascript"></script>
@@ -19,17 +20,17 @@
     <body>
 
         <div class="header">
+
             <div id="logo">
-                <a href="/"><img src="/static/images/oldschool/logo.png"/></a>
+                <a href="/"><img style="max-height: 100px;" src="/static/images/mctop.jpg"/></a>
             </div>
 
             <div class="top-menu">
                 <a href="/news/post/15" title="Конкурс на разработку дизайна">Конкурс от MCTop</a>
-                <a href="/news" title="Свежие новости рейтинга">Новости</a>
-                <a href="/rating" title="Рейтинг">Рейтинг</a>
-                <a href="/search" title="Поиск наиболее подходящего Вам и Вашим друзьям сервера">Поиск сервера</a>
-                <a href="/cp" title="Вход в панель управления сервером">КП</a>
-                <a href="/pages?mode=register" title="Добавление своего сервера на MCTop.ME">Регистрация</a>
+                <a href="/rating" title="Список серверов Minecraft от MCTop.me">Сервера Minecraft</a>
+                <!--<a href="/social" title="Вход на Mine-Russia.Social">Войти</a>-->
+                <a href="/pages?mode=register" title="Добавление своего сервера на MCTop.me">Регистрация</a>
+                <a href="/pages?mode=about" title="Цель и преимущества проекта MCTop.me">Идея</a>
                 <a href="/pages?mode=anniversary" title="История проекта MCTop">О сайте</a>
             </div>
 
@@ -66,7 +67,7 @@
             <footer>
                 <div class="footer__row">
                     <ul class="bNav">
-                        <li><a href="/pages?mode=about">О сайте</a></li>
+                        <li><a href="/pages?mode=anniversary">История</a></li>
                         <li><a href="/pages?mode=developers" title="Разработчикам и всем тем, кому интересно развитие MCTop">Разработчикам</a></li>
                         <li><a href="/pages?mode=rules">Правила</a></li>
                         <li><a href="/pages?mode=sitemap">Карта сайта</a></li>
