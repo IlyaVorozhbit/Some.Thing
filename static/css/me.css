@@ -37,11 +37,11 @@ body { margin: 0px; padding: 0px; direction: ltr;}
 h1 { color: #545454; font-size: 21px;  margin: 0;  border-bottom: 1px solid #d4d4d4;  padding-bottom: 5px; padding-left: 5px;}
 
 .news-block { padding-top: 10px; border-bottom: 1px dotted #dedede;}
-.news-title { font-family: "Arial", sans-serif; font-size: 16px;}
+.news-title { font-family: "Arial", sans-serif; font-size: 21px;}
 .news-title a { color: #208dc4; text-decoration: none;}
 .news-title a:hover { color: #208dc4; text-decoration: underline;}
-.news-info { font-family: "Arial", sans-serif; font-size: 12px; color: #bfbfbf; padding-top: 3px;}
-.news-content { font-family: "Arial", sans-serif; font-size: 14px; color: #000000;}
+.news-info { font-family: "Arial",sans-serif; font-size: 12px; color: #323232; padding: 5px; background-color: #D1D1D1; width: 100%; display: inline; position: relative; top: 6px; border: 1px solid #AAA8A8;}
+.news-content { font-family: "Arial", sans-serif; font-size: 14px; color: #000000; position: relative; top: 7px;}
 .news-content p { margin: 0; padding-top: 8px; padding-bottom: 8px;}
 
 .server-block { background-color:#fff; padding-top: 10px; padding-left: 10px; border-bottom: 1px dotted #dedede; position: relative; padding-bottom: 8px; margin-bottom: 8px;}
