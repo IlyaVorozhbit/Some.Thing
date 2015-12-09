@@ -32,7 +32,7 @@
         }
 
         public function defineModule(){
-			if($_GET['module'] && preg_match("/^[a-z0-9]+$/", $_GET['module'])) return $_GET['module'];
+			if(isset($_GET['module']) && preg_match("/^[a-z0-9]+$/", $_GET['module'])) return $_GET['module'];
             return "news";
         }
 

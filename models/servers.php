@@ -75,5 +75,20 @@
                 echo 'Not checking yet';
         }
 
+        public static function getServersFromMCSV($page){
+
+            $url = 'http://minecraft-servers.su/api/index.php?page='.$page;
+
+            if( $curl = curl_init() ) {
+                curl_setopt($curl, CURLOPT_URL, $url);
+                curl_setopt($curl, CURLOPT_RETURNTRANSFER,true);
+                $out = curl_exec($curl);
+                curl_close($curl);
+            }
+
+            return json_decode($out);
+
+        }
+
 
     }

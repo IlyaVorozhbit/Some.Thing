@@ -25,13 +25,32 @@
                 <a href="/"><img style="max-height: 100px;" src="/static/images/mctop.jpg"/></a>
             </div>
 
+            <div class="disclaimer">
+                <div class="title"> Дисклаймер</div>
+                <div class="image">
+                    <img style="max-height: 70px;" src="/static/images/DISCLAIMER.png"/>
+                </div>
+                <div class="text">
+                    MCTop находится в стадии возрождения.<br>
+                    Нет ни правых, ни виноватых.<br>
+                    Мы просто восстанавливаем проект. <br>
+                    Потерпите еще чуть-чуть, если терпели 5(!) лет<hr>
+                    С любовью, MCTop.Team<br>
+                    <!-- VK Widget -->
+                    <div id="vk_subscribe"></div>
+                    <script type="text/javascript">
+                        VK.Widgets.Subscribe("vk_subscribe", {mode: 2, soft: 1}, -73169187);
+                    </script>
+                </div>
+            </div>
+
             <div class="top-menu">
-                <a href="/news/post/15" title="Конкурс на разработку дизайна">Конкурс от MCTop</a>
-                <a href="/rating" title="Список серверов Minecraft от MCTop.me">Сервера Minecraft</a>
+                <a href="/news/post/15" title="Конкурс на разработку дизайна">MCTop.Дизайн</a> |
+                <a href="/servers" title="Список серверов Minecraft от MCTop.me">Сервера Minecraft</a> |
                 <!--<a href="/social" title="Вход на Mine-Russia.Social">Войти</a>-->
-                <a href="/pages?mode=register" title="Добавление своего сервера на MCTop.me">Регистрация</a>
-                <a href="/pages?mode=about" title="Цель и преимущества проекта MCTop.me">Идея</a>
-                <a href="/pages?mode=anniversary" title="История проекта MCTop">О сайте</a>
+                <a href="/pages?mode=register" title="Добавление своего сервера на MCTop.me">Регистрация</a> |
+                <a href="/pages?mode=about" title="Идея, цель и преимущества проекта MCTop.me">О сайте</a> |
+                <a href="/pages?mode=anniversary" title="История проекта MCTop">История</a>
             </div>
 
         </div>
@@ -49,11 +68,11 @@
                         Core::f()->abort();
                 ?>
 
-                <h2 style="font-size: 10px; border-bottom: 1px solid #e5e5e5; color: #000000;">Нравится сайт? Нажми "Мне нравится"</h2>
+                <!--<h2 style="font-size: 10px; border-bottom: 1px solid #e5e5e5; color: #000000;">Нравится сайт? Нажми "Мне нравится"</h2>
                 <div id="vk_like"></div>
                 <script type="text/javascript">
                     VK.Widgets.Like("vk_like", {type: "button"});
-                </script>
+                </script>-->
 
                 <!--<br>
                 <div id="page-numbers">

@@ -1,6 +1,9 @@
 /* Design: D1mK4; Development: D1mK4; E-mail: d1mk4x(at)gmail(dot)com */
 
-html, body { background-color: #f4f4f4;}
+html, body { background-color: #fff;}
+
+
+hr { border: 0; border-bottom: 1px dashed #ccc; background: #999; }
 
 h2 { border-bottom: 1px solid #cacaca; margin: 0px; margin-bottom: 4px; padding: 3px;}
 a { color: #2B587A; text-decoration: none; cursor: pointer;}
@@ -32,17 +35,32 @@ body { margin: 0px; padding: 0px; direction: ltr;}
 #cp-menu a:hover { color: #cdcdcd;}
 
 #padding { margin: 0 auto; padding-top: 45px; padding-bottom: 33px;}
-#container { border-radius: 4px; background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 0px 2px #BABABA; padding: 10px; width: 95%;}
-#page-title h1 { color: #545454; font-size: 21px;  margin: 0;  border-bottom: 1px solid #d4d4d4;  padding-bottom: 5px; padding-left: 5px;}
+#container { border-radius: 4px; border: 1px dashed #ccc; background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 0px 2px #BABABA; padding: 10px; width: 95%;}
+#page-title h1 { position: relative; top: -5px;color: #545454; font-size: 21px;  margin: 0;  border-bottom: 1px solid #d4d4d4;  padding-bottom: 5px; padding-left: 5px;}
 h1 { color: #545454; font-size: 21px;  margin: 0;  border-bottom: 1px solid #d4d4d4;  padding-bottom: 5px; padding-left: 5px;}
 
 .news-block { padding-top: 10px; border-bottom: 1px dotted #dedede;}
-.news-title { font-family: "Arial", sans-serif; font-size: 21px;}
+.news-title { font-family: "Arial", sans-serif; font-size: 15px; display: inline; position: relative; top: 6px;}
 .news-title a { color: #208dc4; text-decoration: none;}
 .news-title a:hover { color: #208dc4; text-decoration: underline;}
-.news-info { font-family: "Arial",sans-serif; font-size: 12px; color: #323232; padding: 5px; background-color: #D1D1D1; width: 100%; display: inline; position: relative; top: 6px; border: 1px solid #AAA8A8;}
+.news-info {
+    font-family: "Arial",sans-serif;
+    font-size: 12px;
+    color: #000;
+    padding: 7px;
+    background-color: #ECECEC;
+    border: 1px dashed #06525E;
+    text-align: center;
+    position: relative;
+    top: 6px;
+}
 .news-content { font-family: "Arial", sans-serif; font-size: 14px; color: #000000; position: relative; top: 7px;}
-.news-content p { margin: 0; padding-top: 8px; padding-bottom: 8px;}
+.news-content p { padding: 15px;
+    background-color: #06525E;
+    position: relative;
+    top: 0px;
+    text-align: center;
+    color: #fff;}
 
 .server-block { background-color:#fff; padding-top: 10px; padding-left: 10px; border-bottom: 1px dotted #dedede; position: relative; padding-bottom: 8px; margin-bottom: 8px;}
 .server-block-right-container { position: absolute; width: 127px; top: 10px; right: 10px;}
@@ -127,8 +145,48 @@ li { display: list-item; text-align: -webkit-match-parent;}
 #search{ position:relative; left:110px; top:-15px; }
 
 .header { padding-top: 10px; min-height: 70px; background-color:#fff; margin-left: auto; margin-right: auto; text-align: center; width: 100%; margin-bottom: 20px;}
-.top-menu { text-transform: uppercase;padding: 20px; font-size: 18px;}
-.top-menu a {margin: 5px; color: #000;text-shadow: 1px 1px 2px #a0fdff, 0 0 1em #8fe7ff; }
-.top-menu a:hover {margin: 5px; color: #000;text-shadow: 1px 1px 2px #a29ea8, 0 0 1em #787881; }
+.top-menu {font-size: 18px;
+    margin-top: 90px;
+    padding-bottom: 7px; padding-top: 7px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+.top-menu a {margin: 5px; color: #000;}
+.top-menu a:hover {margin: 5px; color: #000;text-shadow: 3px 2px 1px #dcdcdc, 1px 0px 1em #07525e; }
 .about p {font-size: 13px;}
 .page-content { margin-bottom: 5px; margin-top: 5px; padding: 5px; border: 1px solid #cacaca;}
+
+.servers {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.servers .server {
+    border: 1px solid #cacaca;
+    padding: 5px;
+}
+
+.servers .server .title {
+    display: inline;
+}
+
+.servers .server .address {
+    display: inline;
+}
+
+.disclaimer {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    border: 1px dashed #ccc;
+}
+
+.disclaimer .title {
+    font-size: 9px;
+    border-bottom: 1px solid #ccc;
+}
+
+.disclaimer .text {
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 9px;
+    text-align: justify;
+}
