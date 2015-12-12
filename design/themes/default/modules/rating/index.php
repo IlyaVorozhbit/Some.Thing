@@ -1,5 +1,5 @@
 <?php
-    $servers = Servers::get(10);
+$servers = Servers::get(10);
 ?>
 
 <div id="page-title">

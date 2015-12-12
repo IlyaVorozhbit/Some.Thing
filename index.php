@@ -1,22 +1,22 @@
 <?php
 
-    define('IS_LOCAL', true); // if is true - don't redirect us to mctop.me
+define('IS_LOCAL', true); // if is true - don't redirect us to mctop.me
+define('IN_DEV', false); //if debug is on, write logs to page;
+define('ROOT_DIR', __DIR__);
 
-    if(!IS_LOCAL && $_SERVER['HTTP_HOST'] != 'mctop.me')
-        header('location: http://mctop.me');
+@ini_set("display_errors", IN_DEV); // Вывод ошибок в релизе стоит отключить из соображений безопасности. Они будут писаться в лог.
 
-    define('IN_DEV', false); //if debug is on, write logs to page;
-    define('ROOT_DIR', __DIR__);
+if (!IS_LOCAL && $_SERVER['HTTP_HOST'] != 'mctop.me') {
+    header('Location: http://mctop.me');
+    exit('<a href="http://mctop.me">http://mctop.me</a>');
+}
 
-	@ini_set("display_errors", IN_DEV); // Вывод ошибок в релизе стоит отключить из соображений безопасности. Они будут писаться в лог.
+require_once('core/init.php');
+$initializator = new Initializator();
 
-    require_once('core/init.php');
+$version = $initializator::settings()['version'];
 
-    $initializator = new Initializator();
-
-    $version = $initializator::settings()['version'];
-
-
-	if(Core::statusIsOkey())
-		require_once('design/themes/default/oldschool.php');
+if (Core::statusIsOkey()) {
+    require_once('design/themes/default/oldschool.php');
+}
 	
