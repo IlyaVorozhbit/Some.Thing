@@ -1,9 +1,12 @@
 <?php
-    $page = (!isset($_GET['page']) || strlen($_GET['page'])==0 || (int)($_GET['page'])<=0)? '1': (int) $_GET['page'];
-    $servers = Servers::getServersFromMCSV($page);
 
-    if(sizeof($servers) == 0)
-        exit('Добро пожаловать в MCTop');
+$page = (!isset($_GET['page']) || strlen($_GET['page']) == 0 || (int) $_GET['page'] <= 0) ? '1' : (int) $_GET['page'];
+$servers = Servers::getServersFromMCSV($page);
+
+if (count($servers) == 0) {
+    exit('Добро пожаловать в MCTop');
+}
+
 ?>
 
 <h1>Список серверов по игре Minecraft</h1>
