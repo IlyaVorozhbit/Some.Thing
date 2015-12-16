@@ -10,6 +10,7 @@ class Initializator {
         require_once(ROOT_DIR . '/settings/constants.php');
         require_once(ROOT_DIR . '/core/MySQL_PDO.php');
         require_once(ROOT_DIR . '/core/CFSS.php');
+        require_once(ROOT_DIR . '/core/Cookie.php');
         require_once(ROOT_DIR . '/models/users.php');
         require_once(ROOT_DIR . '/models/servers.php');
         require_once(ROOT_DIR . '/models/news.php');
