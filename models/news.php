@@ -1,5 +1,7 @@
 <?php
 
+use \MCTop\Core;
+
 class News {
 
     public static function get_last_news() {
