@@ -45,7 +45,7 @@ class Core {
         self::$db = new \MySQL_PDO($dbSettings['server'], $dbSettings['user'], $dbSettings['password'], $dbSettings['db']);
     }
 
-    function getRouter() {
+    public function getRouter() {
         return $this->router;
     }
 
