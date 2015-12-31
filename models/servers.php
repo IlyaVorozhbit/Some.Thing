@@ -1,6 +1,6 @@
 <?php
 
-use \MCTop\Core;
+use \Some\Core;
 
 class Servers {
 

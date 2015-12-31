@@ -1,4 +1,4 @@
-<?php use \MCTop\Core; ?>
+<?php use \Some\Core; ?>
 <!DOCTYPE html>
 <html lang="ru">
     <head>

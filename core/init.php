@@ -19,7 +19,7 @@ class Initializator {
 
         require_once(ROOT_DIR . '/core/core.php');
 
-        $this->core = new \MCTop\Core();
+        $this->core = new \Some\Core();
     }
 
     public static function settings() {

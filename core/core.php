@@ -1,9 +1,9 @@
 <?php
 
-namespace MCTop;
+namespace Some;
 
-use \MCTop\Core\Router;
-use \MCTop\Core\Request;
+use \Some\Core\Router;
+use \Some\Core\Request;
 
 class Core {
 
@@ -11,7 +11,7 @@ class Core {
     private static $some_register = [];
 
     /**
-     * @var MySQL_PDO
+     * @var \MySQL_PDO
      */
     private static $db;
 
@@ -23,7 +23,7 @@ class Core {
     /**
      * Core functions SubSystem
      *
-     * @var CoreFunctionsSubSystem
+     * @var \CoreFunctionsSubSystem
      */
     private static $f;
     private static $status = 0;
@@ -76,14 +76,14 @@ class Core {
     }
 
     /**
-     * @return MySQL_PDO
+     * @return \MySQL_PDO
      */
     public static function db() {
         return self::$db;
     }
 
     /**
-     * @return CoreFunctionsSubSystem
+     * @return \CoreFunctionsSubSystem
      */
     public static function f() {
         return self::$f;

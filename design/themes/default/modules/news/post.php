@@ -25,5 +25,5 @@ if (!isset($post['error'])):
 endif;
 
 if (isset($post['error'])) {
-    \MCTop\Core::f()->abort();
+    \Some\Core::f()->abort();
 }

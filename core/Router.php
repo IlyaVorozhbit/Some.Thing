@@ -1,6 +1,6 @@
 <?php
 
-namespace MCTop\Core;
+namespace Some\Core;
 
 class Router {
 
