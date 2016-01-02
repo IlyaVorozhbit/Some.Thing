@@ -2,7 +2,6 @@
 
 class Core {
 
-    private static $some_core;
     private static $some_register = [];
     private static $module;
     private static $mode;
@@ -21,7 +20,6 @@ class Core {
     private static $status = 0;
 
     public function __construct() {
-        self::$some_core = $this;
         self::$some_register = [];
 
         self::$f = new CoreFunctionsSubSystem;
