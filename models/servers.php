@@ -1,5 +1,7 @@
 <?php
 
+use \Some\Core;
+
 class Servers {
 
     const whitelist_enabled = 1;

@@ -16,7 +16,7 @@ $initializator = new Initializator();
 
 $version = $initializator::settings()['version'];
 
-if (Core::statusIsOkey()) {
+if (\Some\Core::statusIsOkey()) {
     require_once('design/themes/default/oldschool.php');
 }
 	

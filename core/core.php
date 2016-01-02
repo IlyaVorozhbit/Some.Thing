@@ -1,20 +1,28 @@
 <?php
 
+namespace Some;
+
+use \Some\Core\Router;
+use \Some\Core\Request;
+
 class Core {
 
     private static $some_register = [];
-    private static $module;
-    private static $mode;
 
     /**
-     * @var MySQL_PDO
+     * @var \MySQL_PDO
      */
     private static $db;
 
     /**
+     * @var Router Роутер
+     */
+    private $router;
+
+    /**
      * Core functions SubSystem
      *
-     * @var CoreFunctionsSubSystem
+     * @var \CoreFunctionsSubSystem
      */
     private static $f;
     private static $status = 0;
@@ -22,40 +30,29 @@ class Core {
     public function __construct() {
         self::$some_register = [];
 
-        self::$f = new CoreFunctionsSubSystem;
+        self::$f = new \CoreFunctionsSubSystem;
         $this->connectToDatabase();
 
-        self::$module = $this->defineModule();
-        self::$mode = $this->defineMode();
+        $request = new Request();
+        $this->router = new Router($request, 'news', 'index');
+        $this->router->handleRequest();
     }
 
     public function connectToDatabase() {
-        $dbSettings = Initializator::settings()['db'];
-        self::$db = new MySQL_PDO($dbSettings['server'], $dbSettings['user'], $dbSettings['password'], $dbSettings['db']);
+        $dbSettings = \Initializator::settings()['db'];
+        self::$db = new \MySQL_PDO($dbSettings['server'], $dbSettings['user'], $dbSettings['password'], $dbSettings['db']);
     }
 
-    public function defineModule() {
-        if (isset($_GET['module']) && preg_match("/^[a-z0-9]+$/", $_GET['module'])) {
-            return $_GET['module'];
-        }
-        return 'news';
+    public function getRouter() {
+        return $this->router;
     }
 
-    public function defineMode() {
-        if (isset($_GET['mode']) && preg_match("/^[a-z0-9]+$/", $_GET['mode'])) {
-            return $_GET['mode'];
-        }
-
-        return 'index';
+    public function getModule() {
+        return $this->router->getModule();
     }
 
-    // функции ниже потому что доступ до них - приватный
-    public function module() {
-        return self::$module;
-    }
-
-    public function mode() {
-        return self::$mode;
+    public function getAction() {
+        return $this->router->getAction();
     }
 
     public static function status() {
@@ -77,14 +74,14 @@ class Core {
     }
 
     /**
-     * @return MySQL_PDO
+     * @return \MySQL_PDO
      */
     public static function db() {
         return self::$db;
     }
 
     /**
-     * @return CoreFunctionsSubSystem
+     * @return \CoreFunctionsSubSystem
      */
     public static function f() {
         return self::$f;

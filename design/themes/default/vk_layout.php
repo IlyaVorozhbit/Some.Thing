@@ -39,7 +39,7 @@
         </div>
 
         <div class="content">
-            <?php require_once(ROOT_DIR.'/design/themes/default/modules/'.$initializator->core->module().'/'.$initializator->core->mode().'.php');?>
+            <?php require_once(ROOT_DIR.'/design/themes/default/modules/'.$initializator->core->getModule().'/'.$initializator->core->getAction().'.php');?>
 
         </div>
 
